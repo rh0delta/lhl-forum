@@ -4,10 +4,15 @@ Rails.application.routes.draw do
 
   LighthouseForum::Application.routes.draw do
 
-  get 'posts', to: 'posts#index'
+    get 'posts', to: 'posts#index'
 
-  # [tons of helpful comments]
-  end
+    # [tons of helpful comments]
+    end
+
+    get 'posts/0', to: 'posts#post0'
+    get 'posts/1', to: 'posts#post1'
+    get 'posts/2', to: 'posts#post2'
+    get 'posts/3', to: 'posts#post3'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
